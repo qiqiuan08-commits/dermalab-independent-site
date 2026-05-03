@@ -1,0 +1,14 @@
+{
+  "name": "dermalab-independent-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual premium skincare independent site with a local admin CMS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check script.js && node --check admin.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

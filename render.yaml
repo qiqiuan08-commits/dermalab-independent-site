@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dermalab-independent-site
+    env: node
+    plan: free
+    buildCommand: npm run check
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: ADMIN_PIN
+        sync: false

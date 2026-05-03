@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DermaLab Admin | 后台控制系统</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <aside class="sidebar">
+        <div class="admin-brand">
+          <span></span>
+          <div>
+            <strong>DermaLab Admin</strong>
+            <small>Local CMS Console</small>
+          </div>
+        </div>
+        <nav>
+          <a href="#overview">总览</a>
+          <a href="#content">首页内容</a>
+          <a href="#resources">资料中心</a>
+          <a href="#wechat">微信入口</a>
+          <a href="#leads">预约线索</a>
+        </nav>
+        <a class="view-site" href="/" target="_blank">打开前台</a>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p>后台控制系统</p>
+            <h1>内容、资料和线索管理</h1>
+          </div>
+          <form class="login-form">
+            <input type="password" name="pin" placeholder="管理 PIN：admin123" />
+            <button type="submit">登录</button>
+          </form>
+        </header>
+
+        <section class="metrics" id="overview">
+          <article>
+            <span>Leads</span>
+            <strong id="metric-leads">0</strong>
+          </article>
+          <article>
+            <span>Resources</span>
+            <strong id="metric-resources">0</strong>
+          </article>
+          <article>
+            <span>Status</span>
+            <strong id="metric-status">Locked</strong>
+          </article>
+        </section>
+
+        <form class="content-form" id="content">
+          <section class="panel">
+            <div class="panel-heading">
+              <p>Homepage</p>
+              <h2>首页首屏内容</h2>
+            </div>
+            <div class="field-grid">
+              <label>
+                品牌名
+                <input name="brandName" />
+              </label>
+              <label>
+                中文小标题
+                <input name="heroEyebrowZh" />
+              </label>
+              <label>
+                中文主标题
+                <input name="heroTitleZh" />
+              </label>
+              <label>
+                中文说明
+                <textarea name="heroTextZh" rows="4"></textarea>
+              </label>
+              <label>
+                英文小标题
+                <input name="heroEyebrowEn" />
+              </label>
+              <label>
+                英文主标题
+                <input name="heroTitleEn" />
+              </label>
+              <label>
+                英文说明
+                <textarea name="heroTextEn" rows="4"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="panel" id="resources">
+            <div class="panel-heading">
+              <p>Resources</p>
+              <h2>资料下载入口</h2>
+            </div>
+            <div class="resource-list"></div>
+            <button class="secondary" type="button" id="add-resource">新增资料</button>
+          </section>
+
+          <section class="panel" id="wechat">
+            <div class="panel-heading">
+              <p>WeChat</p>
+              <h2>微信咨询入口</h2>
+            </div>
+            <div class="field-grid">
+              <label>
+                弹窗标题
+                <input name="wechatTitle" />
+              </label>
+              <label>
+                二维码占位文字
+                <input name="wechatQrText" />
+              </label>
+              <label class="wide">
+                说明文字
+                <textarea name="wechatNote" rows="3"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <div class="savebar">
+            <span class="save-status">请先登录后编辑</span>
+            <button type="submit">保存配置</button>
+          </div>
+        </form>
+
+        <section class="panel" id="leads">
+          <div class="panel-heading row">
+            <div>
+              <p>Leads</p>
+              <h2>预约/经销/机构合作线索</h2>
+            </div>
+            <button class="secondary" type="button" id="refresh-leads">刷新线索</button>
+          </div>
+          <div class="lead-table"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

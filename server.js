@@ -165,9 +165,9 @@ async function main() {
     }
   });
 
-  server.listen(port, "127.0.0.1", () => {
-    console.log(`DermaLab site: http://127.0.0.1:${port}`);
-    console.log(`Admin panel: http://127.0.0.1:${port}/admin`);
+  server.listen(port, "0.0.0.0", () => {
+    console.log(`DermaLab site listening on port ${port}`);
+    console.log(`Admin panel path: /admin`);
   });
 }
 

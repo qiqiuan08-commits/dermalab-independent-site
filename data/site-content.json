@@ -1,0 +1,61 @@
+{
+  "brandName": "DermaLab Institute",
+  "adminPin": "admin123",
+  "hero": {
+    "zh": {
+      "eyebrow": "Aesthetic Research · China Bilingual Site",
+      "title": "以实验室标准重构功效护肤体验",
+      "text": "面向高端医美术后护理、敏感屏障管理和精细化抗老需求，建立可咨询、可对比、可复购的专业护肤独立站。",
+      "primary": "开始肤况评估",
+      "secondary": "查看研究体系"
+    },
+    "en": {
+      "eyebrow": "Aesthetic Research · China Bilingual Site",
+      "title": "Skincare rebuilt with laboratory standards",
+      "text": "A premium bilingual site for post-aesthetic daily care, sensitive barrier routines, and refined anti-aging skincare, built for consultation, comparison, and repeat purchase.",
+      "primary": "Start Diagnostic",
+      "secondary": "View Research System"
+    }
+  },
+  "quickStats": [
+    {
+      "label": "Protocol",
+      "value": "4-step routines"
+    },
+    {
+      "label": "Focus",
+      "value": "Barrier · Hydration · Firming"
+    },
+    {
+      "label": "Service",
+      "value": "CN / EN consultation"
+    },
+    {
+      "label": "Channel",
+      "value": "WeChat · Inquiry · Retail"
+    }
+  ],
+  "resources": [
+    {
+      "title": "功效测试报告",
+      "url": "#"
+    },
+    {
+      "title": "配方逻辑白皮书",
+      "url": "#"
+    },
+    {
+      "title": "机构合作手册",
+      "url": "#"
+    },
+    {
+      "title": "经销商资料包",
+      "url": "#"
+    }
+  ],
+  "wechat": {
+    "title": "微信客服入口",
+    "note": "这里后续替换为真实微信二维码、企微客服或小程序码。",
+    "qrText": "QR"
+  }
+}
